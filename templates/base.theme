@@ -1,0 +1,379 @@
+{%- block OMNI_DOCUMENT_HTML_START -%}
+    <!DOCTYPE html>
+{%- endblock -%}
+
+{%- block OMNI_DOCUMENT_HEAD_START -%}
+    <head>
+{%- endblock -%}
+
+{%- block OMNI_DOCUMENT_CORE_HEAD -%}
+    <meta name="author" content="Everthing from Everywhere  -  https://www.omnieshops.com/">
+{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_HEAD -%}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{%- endblock -%}
+
+
+{%- block OMNI_CORE_CSS -%}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+
+  
+
+<style type="text/css">
+ 
+
+body {
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+/*.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}*/
+
+.card > img {
+  margin-bottom: .75rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+a {
+      font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #252525;
+    margin-top: 50px;
+    background-color: #ffffff;
+}  
+#mainLoader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+
+
+{%- endblock -%}
+
+
+
+
+
+
+{%- block OMNI_CORE_JS -%}{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_EXTRA_HEAD -%}{%- endblock -%}
+{%- block OMNI_EXTRA_CSS -%}{%- endblock -%}
+
+{%- block OMNI_EXTRA_CSS_HEADER -%}{%- endblock -%}
+
+{%- block OMNI_EXTRA_JS_HEADER -%}{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_DESCRIPTION -%}{%- endblock -%}
+<title>
+        {%- block OMNI_DOCUMENT_TITLE -%} {%- endblock -%}
+        {%- block OMNI_DOCUMENT_SUB_TITLE -%} {%- endblock -%}
+</title>
+
+
+
+{% block OMNI_DOCUMENT_HEAD_STOP %}
+</head>
+{% endblock %}
+
+
+{% block OMNI_DOCUMENT_BODY_START %}
+<body>
+<div id="etherBody">
+{% endblock %}
+
+{%- block OMNI_PAGES_HTML -%}
+  <div id="etherHeader"></div>
+{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_BODY_HEADER -%}
+
+    <nav class="navbar navbar-expand-md fixed-top ">
+      <span class="container">
+      <a class="navbar-brand" href="/">ETHER Checkout</a>
+      <button class="navbar-toggler navbar-light bg-ligh" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          
+
+        </span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        
+
+
+
+        <ul class="navbar-nav ml-auto ">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/support/">Customer Support</a>
+          </li>
+
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/sell/">How to Sell</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing/">Pricing</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/invest/">Invest here</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutUs/">About us</a>
+          </li>
+
+
+
+        </ul>
+
+
+
+
+      </div>
+      </span>
+    </nav>
+
+
+
+
+{%- endblock -%}
+
+{%- block OMNI_DOCUMENT_BODY_HEADER_BG %}{%- endblock -%}
+
+
+
+{%- block OMNI_DOCUMENT_BODY -%}
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Ether Checkout</h1>
+        <p class="lead text-muted">Accept any tradable Ethereum token in our online store, we convert it to ETH or USD for you.</p>
+        <p>
+          <a href="#" class="btn btn-success">Start accepting Ethereum tokens now</a>
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+    <div class="album text-muted">
+      <div class="container">
+
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src=/img/thumb.png alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src=/img/thumb.png alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src=/img/thumb.png alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+{%- endblock -%}
+
+{%- block OMNI_DOCUMENT_BODY_FOOTER -%}
+
+{%- endblock -%}
+
+
+{%- block OMNI_FOOTER_JS -%}
+
+  <!-- <script src="https://cdn-global.miniloja.com.br/lib/libapp.js"></script> -->
+
+
+<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB_Bwn_FMcM0lEjtIhpWMmllA5y1HKFNX4",
+    authDomain: "ethercheckout.firebaseapp.com",
+    databaseURL: "https://ethercheckout.firebaseio.com",
+    projectId: "ethercheckout",
+    storageBucket: "ethercheckout.appspot.com",
+    messagingSenderId: "904943486754"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+
+  <script src="/lib/underscore.js"></script>
+  <script src="/lib/backbone.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-100573430-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+{%- endblock -%}
+
+
+{%- block  OMNI_APP_JS -%}{%- endblock -%}
+
+
+{%- block OMNI_EXTRA_FOOTER_JS -%}{%- endblock -%}
+
+
+{%- block OMNI_DOCUMENT_BODY_STOP -%}
+
+
+  </div>
+
+    </body>
+{%- endblock -%}
+
+{%- block OMNI_DOCUMENT_HTML_STOP -%}
+</html>
+{%- endblock -%}
