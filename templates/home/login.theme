@@ -1,0 +1,89 @@
+{% extends "base.theme" %}
+
+
+
+{%- block OMNI_DOCUMENT_BODY_HEADER -%}
+
+<div id="myHeader" class="ui  header vertical basic segment">
+     <div class="ui  vertical basic  segment">
+         <div class="ui container">
+             <div class="ui stackable grid">
+                 <div class="sixteen wide column">
+                     <div class="ui relaxed list">
+                         <div class="item  center aligned">
+							<h2 class="ui teal center aligned icon header">
+							  <i class="circular users icon"></i>
+							  Login options
+							</h2>
+							<div class="separador"></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+      </div>
+</div>
+
+{%- endblock -%}
+
+
+
+
+{%- block OMNI_DOCUMENT_BODY -%}
+    
+
+
+
+<div  class="ui  stackable  grid container">
+
+    <div class="two wide column">
+    </div>
+    <div class="five wide column">
+
+				<div class="ui segment loginPanel">
+					
+					{% for option in loginOptions %}
+       	<a  <a href="{{option.path}}?destination_url={{ destination_url }}" class="ui fluid large item {{option.class}} big icon button">
+                        <i class="{{option.icon}} icon"></i> {{option.label}}
+        </a>  
+        {%-if not loop.last -%}<h4 class="ui horizontal divider header">OR</h4>{%else%}{%- endif -%}{%- endfor -%}
+				</div>
+
+</div>
+
+    
+    <div class="seven wide column">
+
+
+    	<div class="ui basic segment">
+    	
+
+
+        <h2 class="ui teal  header">
+          About our social login
+        </h2>
+        <div>
+        <p class="text">
+            
+          		Small text about login social  
+            <br>
+
+
+        <div class="ui bulleted list">
+            <div class="item">
+               Item one
+            
+            </div>
+            
+         </div>
+        
+			</div>
+    
+        </div>
+
+    <div class="two wide column">
+    </div>
+</div>
+</div>
+<div class="separador"></div>
+{% endblock %}

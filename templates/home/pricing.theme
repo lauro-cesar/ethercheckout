@@ -1,0 +1,23 @@
+{% extends "base.theme" %}
+
+
+{%- block OMNI_DOCUMENT_BODY -%}
+
+	<div class="ui vertical stripe basic segment">
+  	<div class="ui text container">
+
+		<a name="pricing"></a>
+  		<h3 class="ui header">Pricing</h3>    
+
+    	<p>Merchants pay a flat fee of 0.175% in each successful transaction</p>
+    	<p>For customers we offer a competitive trade rate.</p>
+
+
+
+
+	</div>
+  
+  </div>
+
+
+{% endblock %}

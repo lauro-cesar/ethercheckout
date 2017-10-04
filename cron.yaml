@@ -1,0 +1,6 @@
+cron:
+- description: Session Manager Token
+  url: /kernel/update/market/
+  target: kernel-app
+  schedule: every 30 mins synchronized
+  timezone: US/Eastern

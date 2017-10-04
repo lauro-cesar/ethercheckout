@@ -1,13 +1,17 @@
 application: ethercheckout
-version: 1-1
+version: ethercheckout-tier-1
 runtime: python27
 api_version: 1
 threadsafe: yes
+
+# application_readable: true
+
 
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
+
 - url: /flash
   static_dir: static/flash
   secure: always
@@ -111,5 +115,7 @@ skip_files:
 - ^(.*/)?\..*$
 - .idea/*
 - .git/*
+- .devel/*
+
 - .dist-info
 - .egg-info

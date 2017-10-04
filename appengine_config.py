@@ -18,3 +18,4 @@ from google.appengine.ext import vendor
 
 
 vendor.add('lib')
+os.path.expanduser = lambda path: path

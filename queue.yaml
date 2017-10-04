@@ -1,0 +1,13 @@
+total_storage_limit: 500M
+
+queue:
+- name: default
+  rate: 180/s
+  bucket_size: 100
+  max_concurrent_requests: 1000
+
+- name: MarketManager
+  rate: 60/s
+  bucket_size: 100
+  max_concurrent_requests: 1000
+  target: kernel-app

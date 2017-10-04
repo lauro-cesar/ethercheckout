@@ -26,7 +26,21 @@ import hashlib
 from google.appengine.api import taskqueue
 from google.appengine.api import memcache
 
+marketPrefix='ETH'
+ignore=['ETH','APX']
+
 from jinja2 import Undefined
+
+_IDENTITY_ENDPOINT = ('https://identitytoolkit.googleapis.com/'
+                      'google.identity.identitytoolkit.v1.IdentityToolkit')
+
+_FIREBASE_URL = "https://ethercheckout.firebaseio.com"
+
+
+_FIREBASE_SCOPES = ['https://www.googleapis.com/auth/cloud-platform',
+    'https://www.googleapis.com/auth/firebase.database',
+    'https://www.googleapis.com/auth/userinfo.email']
+
 
 
 themeFiles=['.omni','.theme']

@@ -1,0 +1,130 @@
+{% extends "base.theme" %}
+
+
+
+{%- block OMNI_DOCUMENT_BODY_HEADER -%}
+
+<div class="ui header vertical basic segment">
+     <div class="ui  vertical basic  segment">
+         <div class="ui container">
+             <div class="ui stackable grid">
+                 <div class="sixteen wide column">
+                     <div class="ui relaxed list">
+                         <div class="item  center aligned">
+                             <h1 class="ui center aligned  header">
+                             <img class="ui large image" src="{{ user.avatar_url }}">
+                                 <div class="content">
+                                    {{ user.name }}
+                                     <div class="sub header">
+                                     <a href="{{ user.link }}" target="_blank" rel="nofollow">{{ user.link }}</a>
+                                     </div>
+                                 </div>
+                             </h1>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+      </div>
+</div>
+
+{%- endblock -%}
+
+
+
+{%- block OMNI_DOCUMENT_BODY -%}
+
+<div class="ui basic segment">
+
+
+
+<div class="ui top attached tabular menu">
+  <a class="item active" data-tab="1">Transactions</a>
+  <a class="item" data-tab="2">Organizations</a>
+  <a class="item" data-tab="3">Products</a>
+</div>
+
+<div class="ui bottom attached tab segment active" data-tab="1">
+ 
+     	<div class="ui right floated basic segment">
+
+    <div class="ui action input">
+      <input class="ui fluid" type="text" placeholder="Address">
+      <div class="ui button">Search</div>
+    </div>
+		</div>
+</div>
+
+
+<div class="ui bottom attached tab segment" data-tab="3">
+	
+        {% for market in etherMarkets %}
+        <div class="card">
+        <div class="content">
+            <div class="header">{{market['MarketCurrencyLong']|escape}}</div>
+            <div class="description">
+              
+              {% if market['LogoUrl'] %}
+              <img class="ui medium image" src="{{market['LogoUrl']}}">
+              {% else %}
+              
+              <img class="ui medium image" src="/img/{{market['MarketName']|lower}}.png">
+              
+
+              {% endif %}
+              <!-- <span id="{{market['MarketName']|escape}}"></span> -->
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+	
+</div>
+
+<div class="ui bottom attached tab segment" data-tab="2">
+
+	<div class="ui right floated basic segment">
+	<div class="ui icon buttons">
+  		<button class="ui button">New Organization</button>
+	</div>
+	</div>
+
+      <div class="ui seven stackable cards">
+
+        {% for market in etherMarkets %}
+        <div class="card">
+        <div class="content">
+            <div class="header">{{market['MarketCurrencyLong']|escape}}</div>
+            <div class="description">
+              
+              {% if market['LogoUrl'] %}
+              <img class="ui medium image" src="{{market['LogoUrl']}}">
+              {% else %}
+              
+              <img class="ui medium image" src="/img/{{market['MarketName']|lower}}.png">
+              
+
+              {% endif %}
+              <!-- <span id="{{market['MarketName']|escape}}"></span> -->
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div class="separador"></div>
+
+{% endblock %}
+
+

@@ -1,0 +1,13 @@
+Flask==0.12.2
+pyjwt==1.5.2
+flask-cors==3.0.3
+google-auth==1.0.1
+requests==2.18.2
+requests-toolbelt==0.8.0
+httplib2
+oauth2client
+oauth2
+requests-oauthlib
+python-social-auth
+python-openid
+social-auth-core[all]

@@ -1,0 +1,26 @@
+{% extends "base.theme" %}
+
+
+{%- block OMNI_DOCUMENT_BODY -%}
+
+
+	<div class="ui vertical stripe basic segment">
+  	<div class="ui text container">
+
+		<a name="pricing"></a>
+  		<h3 class="ui header">Buy any book from amazon with Ethereum tokens.</h3>    
+
+   
+
+
+
+
+	</div>
+  
+  </div>
+
+
+
+{% endblock %}
+
+
