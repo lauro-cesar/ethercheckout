@@ -1,5 +1,0 @@
-handlers:
-- url: /kernel/.*
-  secure: always
-  login: admin
-  script: kernel.app
